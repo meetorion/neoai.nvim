@@ -35,7 +35,7 @@ M.get_defaults = function()
         prompts = {
             context_prompt = function(context)
                 return "Hey, I'd like to provide some context for future "
-                    .. "messages. Here is the code/text that I want to refer "
+                    .. "messages.Response in chinese please. Here is the code/text that I want to refer "
                     .. "to in our upcoming conversations (TEXT/CODE ONLY):\n\n"
                     .. context
             end,
