@@ -19,7 +19,7 @@ M.get_defaults = function()
         models = {
             {
                 name = "openai",
-                model = "gpt-3.5-turbo",
+                model = "gpt-4",
                 params = nil,
             },
         },
@@ -72,6 +72,7 @@ M.get_defaults = function()
                     error(msg)
                 end,
             },
+            end_point = os.getenv("OPENAI_API_ENDPOINT") or "https://api.openai.com/v1/chat/completions",
         },
         shortcuts = {
             {
